@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION FORM</title>
+    <script src="https://kit.fontawesome.com/9753036172.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="form_header">
+        <h1>STUDENT REGISTRATION FORM</h1>
+
+        <form id="myForm">
+          <!-- name -->
+          <div class="nameHeader flex">
+            <div class="name-box grid">
+              <label id="nameLabel" for="">Name :</label>
+              <input id="name" type="text" required />
+            </div>
+            <div class="fatherName-box grid">
+              <label id="fatherNameLabel" for="">Father Name :</label>
+              <input id="fatherName" type="text" required />
+            </div>
+          </div>
+          <!-- adresse -->
+          <div class="adresseBox grid">
+            <label for="">Address :</label>
+            <input id="adresse" type="text" required />
+          </div>
+
+          <!-- gender -->
+          <div class="genderBox">
+            <label for="">Gender:</label>
+            <input  class="gender" id="male" type="radio" name="gender"value="male"/><span
+              id="mfselect"
+              >Male</span
+            >
+            <input class="gender" id="female" type="radio" name="gender"value="female" /><span
+              id="mfselect"
+              >Female</span
+            >
+          </div>
+          <!-- state  -->
+          <div class="select_header flex">
+            <div class="stateBox grid">
+              <label id="stateLabel" for="">State:</label>
+              <select name="state" id="state" >
+                <option value=""></option>
+                <option value="USA">USA</option>
+                <option value="Germany">Germany</option>
+                <option value="Canada">Canada</option>
+                <option value="Spain">Spain</option>
+              </select>
+            </div>
+                          <!-- langauge  -->
+            <div class="langaugeBox grid">
+              <label id="langaugeLabel" for="">Langauge:</label>
+              <select name="langauge" id="langauge" >
+                <option value=""></option>
+                <option value="Englisch">Englisch</option>
+                <option value="Deutsch">Deutsch</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Spanish">Spanish</option>
+                <option value="italian">italian</option>
+                <option value="French">French</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Birthday-->
+          <div class="birthdayBox grid">
+            <label for="">Birthday :</label>
+            <input type="date" id="birthday" name="birthday">
+          </div>
+          <!-- mobil -->
+          <div class="mobil Box grid">
+            <label for="">Mobil Number :</label>
+            <input id="mobil" type="number" required />
+          </div>
+
+        
+       
+          <!-- Email  -->
+          <div class="emailBox grid">
+            <label for="">Email ID :</label>
+            <input type="email" name="" id="email" required /><br />
+          </div>
+          <!-- Button -->
+
+          <div class="buttons">
+          
+            <button id="submit">Submit Form</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form_result">
+        <i class="fa-solid fa-xmark"></i>
+        <h3>
+          Congratulations, your registration has been successfully completed.
+        </h3>
+        <form id="resultText" action="">
+          <div class="resutList">
+            <span>Name :</span>
+            <p id="resultName"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Father Name :</span>
+            <p id="resultFatherName"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Address :</span>
+            <p id="resultAdress"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Gender:</span>
+            <p id="resultGender"></p>
+          </div>
+
+          <div class="resutList">
+            <span>State:</span>
+            <p id="resultState"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Langauge:</span>
+            <p id="resultLangauge"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Birthday :</span>
+            <p id="resultBirthday"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Mobil Number :</span>
+            <p id="resultMobil"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Email ID :</span>
+            <p id="resultEmail"></p>
+          </div>
+
+           </form>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

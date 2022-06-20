@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  background-color: #282828;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+}
+
+#myForm>*{
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 90%;
+}
+.container {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  max-width: 1400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.img_header,
+.form_header,
+.form_result {
+  width: 450px;
+  height: 530px;
+}
+.form_header,
+.form_result {
+  padding: 1rem;
+}
+
+
+
+
+label {
+  font-size: 14px;
+  line-height: 25px;
+
+  font-weight: 700;
+}
+h1 {
+  
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  flex-direction: column;
+}
+input,
+select {
+  height: 30px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  border: 1px solid #ebebeb;
+}
+input:focus,
+select:focus {
+  border: 1px solid #11b919;
+  transition: all 800ms;
+}
+#name,
+#fatherName {
+  width: 100%;
+}
+#state,
+#langauge {
+  width: 200px;
+}
+.buttons {
+  text-align: right;
+}
+button {
+  width: 100%;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  padding: 10px;
+}
+#reset {
+  color: #999;
+}
+#reset:hover {
+  background-color: #ff6801;
+  color: #fff;
+}
+#submit {
+  background-color: #11b919;
+}
+#submit:hover {
+  background-color: #08480b;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.genderBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+ 
+}
+#male,
+#female {
+  margin-left: 5rem;
+  margin-right: 0.5rem;
+  width: 16px;
+}
+#mfselect {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: #222222;
+}
+option {
+  font-size: 16px;
+}
+
+/* sonuc sayfası css */
+
+.form_result {
+  display:none ;
+  background-color: rgba(225, 206, 206, 0.185);
+}
+span {
+  font-size: 14px;
+  line-height: 25px;
+
+  font-weight: 700;
+}
+.resutList p {
+  color: brown;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  align-items: baseline;
+}
+.resutList {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.292);
+  min-height: 40px;
+  margin-bottom: 0.3rem;
+ 
+}
+h3 {
+  margin-top: 1rem;
+  text-align: center;
+  color: darkgreen;
+  background-color: rgb(163, 222, 135);
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.buttons{
+    margin-top: 1rem;
+}
+i{
+  cursor: pointer;
+}
+i:hover{
+  color: red;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {	
+
+
+    .container {
+        margin-top: 0.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 600px;
+        background-color: #ffffff;
+      }
+
+}
